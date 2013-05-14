@@ -11,5 +11,5 @@ after_success:
 env:
   global:
   - secure: ! 'akTj4X+BH10LHibPcZsNN7AGacVrkP0rlxrGl2r1PUAPfqE7WDXS6tJfzb6I
-      V0LUJwez3cFQ1S6XCwfZWHMIvvhmJz2/R7+7Gvs7OZ0qDvAqdaqWuvLTFoqw
+      V0LasdfaasdfUJwez3cFQ1S6XCwfZWHMIvvhmJz2/R7+7Gvs7OZ0qDvAqdaqWuvLTFoqw
       2iaE+rPoXfZdwNlSOsHS/gBjG/ZjrKYl8c8QrOlrzJRxyIIkywE='
