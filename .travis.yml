@@ -5,17 +5,9 @@ node_js:
 services:
 - neo4j
 before_script:
-- npm install -g grunt-cli
-after_script:
-- wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
-- git remote add heroku git@heroku.com:movie-database-team6.git
-- echo "Host heroku.com" >> ~/.ssh/config
-- echo "   StrictHostKeyChecking no" >> ~/.ssh/config
-- echo "   CheckHostIP no" >> ~/.ssh/config
-- echo "   UserKnownHostsFile=/dev/null" >> ~/.ssh/config
-- heroku keys:clear
-- yes | heroku keys:add
-- yes | git push heroku master
+  - npm install -g grunt-cli
+after_success:
+  - ./scripts/deploy-to-heroku.sh
 env:
   global:
   - secure: ! 'akTj4X+BH10LHibPcZsNN7AGacVrkP0rlxrGl2r1PUAPfqE7WDXS6tJfzb6I
